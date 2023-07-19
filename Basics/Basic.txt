@@ -1,0 +1,23 @@
+"echo" command will be used to display the required output
+
+Create a script using nano or vim in linux
+
+Always start the script with "#!/bin/bash" so that script will run with bash.
+
+Name of the file does not affect the script but .sh is used to know that it is a bash script
+
+"./nameofscript" is used to execute the script
+
+You can use linux command in the sciprt to execute via script
+
+_________________________________________________________________________________
+
+>> ex. Hello World
+
+#!/bin/bash
+
+echo "Hello world!"
+
+echo "My current working directory is:"
+pwd
+____________________________________________________________________________________

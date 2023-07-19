@@ -1,0 +1,45 @@
+The Bash case statement is the simplest form of IF-THEN-ELSE with many ELIF elements. Using the case statement makes our bash script more readable and easier to maintain. 
+These are generally applied to simplify the complex conditions having multiple different choices.
+
+The Bash case statement follows a similar logic as the Javascript or C switch statement. There is a slight difference, as follows:
+
+The Bash case statement takes a value once and tests that value multiple times. 
+It stops searching for a pattern once it has found it and executed the statement linked with it, which is almost opposite in case of the C switch statement.
+
+__________________________________________________________________________________________________________________________
+Syntax
+
+case expression in  
+    pattern_1)  
+        statements  
+        ;;  
+    pattern_2)  
+        statements  
+        ;;  
+    pattern_3|pattern_4|pattern_5)  
+        statements  
+        ;;  
+    pattern-n)  
+        statements  
+        ;;  
+    *)  
+        statements  
+        ;;  
+esac  
+
+____________________________________________________________________________________________________________________________________
+
+There are some key points of bash case statements:
+
+>>Each case statement in bash starts with the 'case' keyword, followed by the case expression and 'in' keyword. 
+The case statement is closed by 'esac' keyword.
+
+>>We can apply multiple patterns separated by | operator. The ) operator indicates the termination of a pattern list.
+
+>>A pattern containing the statements is referred to as a clause, and it must be terminated by double semicolon (;;).
+
+>>An asterisk symbol (*) is used as a final pattern to define the default case. It is used as a default case when used as the last case.
+
+
+
+

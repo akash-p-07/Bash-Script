@@ -1,0 +1,28 @@
+A data stream in the context of Bash is a communication channel between a program and the environment where the command was launched from.
+
+There are three data standard streams that are created when a command is launched.
+
+The three streams are:
+
+stdin - standard input
+stdout - standard output
+stderr - standard error
+Further more:
+
+The standard input stream accepts text as it's input.
+The text output from the command is sent to the shell though the standard output stream.
+Error messages from the command is sent to the shell through the standard error stream.
+These data streams are treated as files meaning you read from them and write to them as if they are regular files. Files are identified by a unique number called a file descriptor, which the process uses to perform read/write operations.
+
+When a command is launched, the first three file descriptors are allocated for the standard streams in the TTY. A TTY is the input/output environment, which is the terminal. This is different than a shell, which refers to the command-line interpreter.
+
+Standard stream file descriptors:
+
+0: stdin
+1: stdout
+2: stderr
+File descriptor 0 is dedicated for standard input, 1 for standard output, and 2 for standard error.
+
+File descriptors are maintained under /proc/$pid/fd where $pid is the process id. The current process can be referenced by /proc/self/fd.
+
+The locations of these file descriptors are in /proc/self/fd/0, /proc/self/fd/1, and /proc/self/fd/2 respectively.

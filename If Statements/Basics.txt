@@ -1,0 +1,11 @@
+If statements (and, closely related, case statements) allow us to make decisions in our Bash scripts. 
+They allow us to decide whether or not to run a piece of code based upon conditions that we may set. 
+If statements, combined with loops (which we'll look at in the next section) allow us to make much more complex scripts which may solve larger tasks.
+
+Types: 
+     1. Indenting
+     2. Nested If statements
+     3. If else
+     4. If Elif else
+     5. Boolean operations
+     6. Case Statements 

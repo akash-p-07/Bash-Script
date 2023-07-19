@@ -1,0 +1,31 @@
+Install "at" on your server
+
+Let say we have a script named -> myscript which consist below sample script
+____________________________________________________________________________________________
+>>myscript
+
+#!/bin/bash
+
+logfile=job_results.log
+
+echo "The script ran at the following time: $(date)" > $logfile
+_____________________________________________________________________________________________
+
+Now in order to shchedule the above script use below commands
+
+>> at 15:32 -f ./myscript.sh
+(## Our Job will run at 3:32  today!)
+______________________________________________________________________________________________
+
+To see the list of Job that are scheduled, please use the below command
+
+>> atq
+______________________________________________________________________________________________
+
+To schedule a Job on specific date and time -> at hh:mm mm:dd:yy
+
+ex: at 18:00 081625
+
+with the above command, job is now schedule on 15th August 2025 at 6 PM
+______________________________________________________________________________________________
+

@@ -1,0 +1,7 @@
+#Variables are essential part of programming which specifies the memory location through characters, numeric, and aplhanumeric.
+#These are used to be referenced to be referenced and manipulated in a computer program.
+
+Variables are the conatiners which store data or a useful piece of information as the value inside them.
+In bash there can different types like -> Syntax, Data Types, Types, Working
+
+In automation using bash scripts, variables are mostly used to reduce theusage of retative words or lines or paragraphs within the script, instead we define the the variable at the start and the variable can be used to refer the original coneetxt where ever need using $variablename

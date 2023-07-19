@@ -1,0 +1,14 @@
+The bash while loop can be defined as a control flow statement which allows executing the given set of commands repeatedly as long as the applied condition evaluates to true. 
+For example, we can either run echo command many times or just read a text file line by line and process the result by using while loop in Bash.
+
+There are some key points of 'while loop' statement:
+    - The condition is checked before executing the commands.
+    - The 'while' loop is also capable of performing all the work as for 'loop' can do.
+    - The commands between 'do' and 'done' are repeatedly executed as long as the condition evaluates to true.
+    - The arguments for a 'while' loop can be a boolean expression.
+
+
+>> Working - The while loop is a restricted entry loop. 
+            It means that the condition is checked before executing the commands of the while loop. 
+            If the condition evaluates to true, the set of commands following that condition are executed. 
+            Otherwise, the loop is terminated, and the program control is given to the other command following the 'done' statement.

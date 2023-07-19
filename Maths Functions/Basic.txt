@@ -1,0 +1,49 @@
+"expr" is used to consider the input for Mathematic equation
+
+>>Although math is not the primary purpose of Bash scripting, knowing how to do essential calculations is helpful for various use cases.
+
+>>Common use cases include:
+     - Adding/subtracting/multiplying/dividing numbers.
+     - Rounding numbers.
+     - Incrementing and decrementing numbers.
+     - Converting units.
+     - Floating-point calculations.
+     - Finding percentages.
+     - Working with different number bases (binary, octal, or hexadecimal).
+
+>>Commands:
+        Arithmetic Expansion: The preferable way to do math in Bash is to use shell arithmetic expansion.
+        The syntax for arithmetic expansions is: $((expression))
+
+        1. awk Command: The awk command acts as a selector for pattern expressions. 
+              For example, to perform addition using the awk command, use the following example statement: 
+              >>awk 'BEGIN { x = 2; y = 3; print "x + y = "(x+y) }'
+        
+        2. bc Command: The bc command (short for basic calculator) is a command-line utility that renders the bc language. 
+              The program runs as an interactive program or takes standard input to perform arbitrary precision arithmetic.
+              >>echo "2+3" | bc
+    
+        3. dc Command: The dc command (short for desk calculator) is a calculator utility that supports reverse Polish notation.
+              The program takes standard input and supports unlimited precision arithmetic. 
+              >>echo "2 3 + p" | dc
+              
+        4. declare Command: The Bash declare command allows integer calculations. To use declare for calculations, add the -i option.
+              >>declare -i x=2 y=3 z=x+y
+              >>echo $x + $y = $z
+        
+        5. expr Command: The expr command is a legacy command line utility for evaluating integer arithmetic. An example expr command looks like the following:
+              >>expr 2 + 3
+        
+        6. factor Command: The factor command is a command-line utility that prints the factors for any positive integer, and the result factorizes into prime numbers.
+              >>factor 100
+        
+        7. let Command: The Bash let command performs various arithmetic, bitwise and logical operations. The built-in command works only with integers. 
+              >>let x=2+3 | echo $x
+
+        8. test Command: The test command in Linux evaluates conditional expressions and often pairs with the Bash if statement.
+              >>test 2 -gt 3; echo $?
+        
+        Math with Integers: ex:
+        >>echo $((x=2, y=3, x+y))
+        >>((x=2, y=3, a=x+y, b=x*y, c=x**y)); echo $a, $b, $c
+

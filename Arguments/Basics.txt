@@ -1,0 +1,23 @@
+Bash uses a tool called positional parameters to provide a means of entering data into a Bash program when it is invoked from the command line. 
+There are ten positional parameters that run from $0 through $9, although there are ways to hack around that limit.
+
+Starting with a simple script that displays an entered name on the screen. 
+Create a file called script1.sh with the following content and make it executable.
+
+ex: 
+
+#!/bin/bash
+echo $0
+
+The output from this script is the name of the script. 
+The $0 parameter is reserved and predefined as the name of the running script and cannot be used for any other purpose. 
+This can be handy inside a script because you don't need to pass the script its own name if it requires it.
+______________________________________________________________________________________________________________
+
+ex: file name - myscript.sh
+
+#!/bin/bash
+echo "You entered the argument: $1, $2, $3 and $4"
+
+Run>> ./myscript.sh Linux Pizza Books Games
+O/P>> You entered the argument: Linux, Pizza, Books, Games.

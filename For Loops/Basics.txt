@@ -1,0 +1,17 @@
+Like any other programming language, bash shell scripting also supports 'for loops' to perform repetitive tasks. 
+It helps us to iterate a particular set of statements over a series of words in a string, or elements in an array. 
+For example, you can either run UNIX command (or task) many times or just read and process the list of commands using a 'for loop'.  
+
+Example:
+
+#!/bin/bash  
+#This is the basic example of 'for loop'.  
+  
+learn="Start learning from Javatpoint."  
+  
+for learn in $learn  
+do  
+echo $learn  
+done  
+  
+echo "Thank You."  
